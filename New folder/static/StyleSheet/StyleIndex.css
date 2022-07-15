@@ -1,0 +1,81 @@
+@import url(https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&display=swap);
+
+*{
+    margin: 0;
+    padding: 0;
+    color: rgb(73, 128, 222);
+    font-family: 'Edu SA Beginner', 'cursive';
+}
+
+body::before{
+    content: "";
+    position: absolute;
+    background: center/cover no-repeat url("/static/bg.jpg") ;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+.container{
+    background-color: rgb(96, 21, 70);
+    display: flex;
+    justify-content: center;
+}
+
+.container li{
+    list-style: none;
+    padding: 15px 50px;
+}
+
+.container li a{
+    border: 2px solid rgb(96, 21, 70);
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    font-family: "Trirong", serif;
+}
+
+.container li a:hover{
+    cursor: pointer;
+    position: relative;
+    text-decoration: underline;
+}
+
+.per{
+    display: flex;
+    width: 30%;
+    height: 5%;
+    position: absolute;
+    flex-direction: column;
+    left: 50%;
+    top: 30%;
+    justify-content: center;
+    text-align: center;
+}
+
+.per h1{
+    display: block;
+    text-decoration: underline;
+    justify-content: space-around;
+    color: rgb(73, 128, 222);
+}
+
+.per div{
+    font-size: 1.27rem;
+    position: absolute;
+    display: block;
+    padding-top: 12rem;
+}
+
+#footer p{
+    color: white;
+    display: flex;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    background-color: rgb(96, 21, 70);
+    justify-content: center;
+    position: absolute;
+    bottom: 2px;
+}
